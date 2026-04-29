@@ -10,3 +10,4 @@ README.md
 .env
 .nyc_output
 coverage
+bootstrap/cache/*.php
