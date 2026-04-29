@@ -24,7 +24,7 @@ WORKDIR /var/www
 COPY composer.json composer.lock ./
 
 # Install PHP dependencies. Laravel's Composer scripts need the full app copied first.
-RUN composer install --no-dev --prefer-dist --no-interaction --no-scripts
+RUN composer install --prefer-dist --no-interaction --no-scripts
 
 # Copy application code
 COPY . .
